@@ -21,7 +21,7 @@
 # adds the ones that you fail to find in a new dictionary for revision !
 #
 
-import subprocess
+import random
 import time
 
 ESTIMATED_UPPER_BOUND=22000  #of input file
