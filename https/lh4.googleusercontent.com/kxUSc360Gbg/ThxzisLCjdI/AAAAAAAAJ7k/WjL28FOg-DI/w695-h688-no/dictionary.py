@@ -99,10 +99,11 @@ while True:
         if char==userIn:
             tempDictionary[word]=dictionary.get(word,0)
     try:
-        for key in tempDictionary.keys():
-            print '                       '+str(key)
+        while length>0:
+            randomizer=random.choice(tempDictionary.keys())
+            print '                       '+str(randomizer)
             userIn=raw_input("say the answer outloud ")
-            print str(tempDictionary.get(key,0))
+            print str(tempDictionary[randomizer])
             userIn=raw_input("if you got it press C for correctness otherwise anything else")
             if userIn=='c' or userIn=='C':
                 score+=1
@@ -124,6 +125,7 @@ while True:
                 userIn=raw_input("if you got it press C for correctness otherwise anything else")
                 if userIn=='c' or userIn=='C':
                     score+=1
+
             
         failDict={}
     except KeyboardInterrupt, e:
