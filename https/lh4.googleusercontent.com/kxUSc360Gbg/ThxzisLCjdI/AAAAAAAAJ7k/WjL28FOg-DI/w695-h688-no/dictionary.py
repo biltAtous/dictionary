@@ -108,7 +108,7 @@ while True:
             if userIn=='c' or userIn=='C':
                 score+=1
             else:
-                failDict[key]=tempDictionary.get(key,0)
+                failDict[randomizer]=tempDictionary[randomizer]
             times+=1
             length-=1
             if length==0:
